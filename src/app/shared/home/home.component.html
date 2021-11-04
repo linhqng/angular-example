@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mt-3">
+      <h5 class="text-secondary">These are a list of Angular examples</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 mt-3">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let menuItem of examplesMenu">
+          <a class="text-decoration-none" routerLink="{{ menuItem.path }}">{{
+            menuItem.title
+          }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
